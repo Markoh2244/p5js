@@ -11,9 +11,9 @@
        function setup(){
 	createCanvas(400, 400);
        }
-	function mouseMoved(){
-	    something +=1//increases size
-	  
+	function keyPressed(){
+	    something +=10//increases size
+	             
 	}
 	function mouseDragged(){
 	    something -=1//decreses size
@@ -23,7 +23,7 @@
        function draw(){
 	translate(mouseX, mouseY);
  	rotate(radians(frameCount));
- 	//allows for the shape to move around the mouse
+ 	//allows for the shape to move arounf the mouse
  	
 	strokeWeight(2.0)
 	stroke(random(0,200),random(0,200),random(0,200))
@@ -41,7 +41,7 @@
 
 <body>
     <div id="code" class="container-fluid">
-        <script src="https://gist-it.appspot.com/github/Markoh2244/p5js/blob/gh-pages/project.html?footer=0"></script>
+        <script src="https://gist-it.appspot.com/github/markoh2244/p5js/blob/gh-pages/project.html?footer=0"></script>
     </div>
 
 
