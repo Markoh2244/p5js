@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+
+    <script>
+        var r
+        var g
+        var b
+
+        function setup() {
+            createCanvas(800, 600);
+            r = 0
+            g = 0
+            b = 0
+            background(255)
+            
+
+        }
+
+
+        function draw() {
+            
+            
+            fill(255, 0, 0)
+            rect(75, 400, 75, 75)
+            fill(0, 255, 0)
+            rect(225, 400, 75, 75)
+            fill(0, 0, 255)
+            rect(375, 400, 75, 75)
+            fill(255, 255, 255)
+            rect(525, 400, 75, 75)// sets up bottopm squares and there colors
+            
+            if ((mouseIsPressed) && mouseX > 75 && mouseX < 150 && mouseY < 475 && mouseY > 400) {
+                r = 255
+                g = 0
+                b = 0
+                console.log(color)
+            }// red square=red color
+            
+            else if ((mouseIsPressed) && mouseX > 255 && mouseX < 330 && mouseY < 475 && mouseY > 400) {
+                r = 0
+                g = 255
+                b = 0
+                console.log(color)}//green square = green color
+                
+            else if ((mouseIsPressed) && mouseX > 375 && mouseX < 450 && mouseY < 475 && mouseY > 400) {
+                r = 0
+                g = 0
+                b = 255
+                console.log(color)}//blue square=blue color
+                
+          else if ((mouseIsPressed) && mouseX > 525 && mouseX < 600 && mouseY < 475 && mouseY > 400) {
+              clear()
+                r=255
+                b = 255
+                g=255
+                 background(255)
+                console.log(color)}}//last square=no color 
+                
+            function mouseDragged() {
+                    fill(r,g,b)
+                     
+                    ellipse(mouseX, mouseY, 25, 25)
+                }//draw square
+
+            function mousePressed() {
+                    fill(r, g, b)
+                    ellipse(mouseX, mouseY, 25, 25)}   //draw square
+            
+        
+                
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/Markoh2244/p5js/blob/gh-pages/project-thing.html?footer=0"></script>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+</html>
