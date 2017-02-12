@@ -177,8 +177,6 @@
        
     </script>
 </head>
-
-<body>
 <body>
     <div id="code" class="container-fluid">
         <script src="https://gist-it.appspot.com/github/Markoh2244/p5js/blob/gh-pages/finalproject.html?footer=0"></script>
@@ -190,8 +188,6 @@
             $('#code').before($('#defaultCanvas').remove());
         });
     </script>
-</body>
-
 </body>
 
 </html>
