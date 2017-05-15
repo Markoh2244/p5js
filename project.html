@@ -6,17 +6,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
     
     <script>
-    var something=50
+    var something=5
     
        function setup(){
 	createCanvas(400, 400);
        }
 	function mouseMoved(){
-	    something +=1//increases size
-	             
+	    something +=1.5//increases size
+	    return false
+	  
 	}
 	function mouseDragged(){
-	    something -=1//decreses size
+	    something -=1.5//decreses size
+	    return false
 	}
 
 
